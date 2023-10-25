@@ -1,0 +1,12 @@
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.case {
+    width: 1.5em;
+    height: 2em;
+    text-align: center;
+}

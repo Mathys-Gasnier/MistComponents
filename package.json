@@ -1,0 +1,54 @@
+{
+  "name": "mist-components",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.8",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.6.1",
+    "vite-tsconfig-paths": "^4.2.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/mist-components.es.js",
+      "require": "./dist/mist-components.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "main": "./dist/mist-components.umd.js",
+  "module": "./dist/mist-components.es.js",
+  "types": "./dist/index.d.ts",
+  "peerDependencies": {
+    "react": "16.8.0 || >=17.x",
+    "react-dom": "16.8.0 || >=17.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mathys-Gasnier/mist-components"
+  },
+  "keywords": [],
+  "author": "Mathys Gasnier",
+  "bugs": {
+    "url": "https://github.com/Mathys-Gasnier/mist-components/issues"
+  },
+  "homepage": "https://github.com/Mathys-Gasnier/mist-components#readme",
+  "license": "MIT"
+}
